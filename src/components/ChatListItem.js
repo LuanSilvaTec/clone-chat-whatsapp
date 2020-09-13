@@ -1,13 +1,16 @@
+import { database } from 'firebase'
 import React from 'react'
 import './ChatListItem.css'
 
-export default ()=>{
+export default ({onClick, active, data})=>{
     return (
-        <div className="chatListItem">
-            <img className="chatListItem--avatar" src="https://www.w3schools.com/howto/img_avatar2.png"/>
+        <div className={`chatListItem${active?'active':''}`}
+            onClick={onClick}
+        >
+            <img className="chatListItem--avatar" src={data.image}/>
             <div className="chatListItem--lines">
                 <div className="chatListItem--line">
-                    <div className="chatListItem--name"> Luan</div>
+                    <div className="chatListItem--name">{data.title}</div>
                     <div className="chatListItem--date"> 19:00</div>
                 </div>
                 <div className="chatListItem--line">

@@ -1,0 +1,94 @@
+.chatwindow{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chatwindow--header{
+    height: 60px;
+    border-bottom: 1px solid #CCC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chatwindow--headerinfo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.chatwindow--avatar{
+    height: 40px;
+    width: 40ox;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.chatwindow--name{
+    font-size: 17px;
+    color: #000;
+}
+.chatwindow--headerbuttons {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.chatwindow--btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all ease 0.3s;
+}
+.chatwindow--body{
+  flex: 1;
+  overflow-y: auto;
+  background-color: #E5DDD5;
+  background-size: cover;
+  background-position: center; 
+  background-image: url("https://i.pinimg.com/originals/34/8f/c9/348fc9806e32bba0fb4c42e799ddf880.jpg");
+}
+.chatwindow--footer{
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+.chatwindow--pre{
+    display: flex;
+    margin: 0 15px;
+}
+.chatwindow--inputarea{
+    flex: 1;
+}
+.chatwindow--input{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    background-color: #FFF;
+    border-radius: 20px;
+    font-size: 15px;
+    color:#4a4a4a;
+    padding-left: 15px;
+
+}
+.chatwindow--pos{
+    display: flex;
+    margin: 0 15px;
+}
+aside.emoji-picker-react{
+    width: auto;
+    background: none;
+
+}
+.emoji-picker-react .emoji-group:before{
+    background: none;
+}
+.chatwindow--emojiarea{
+    height: 200px;
+    overflow-y: hidden;
+    transition: all ease 0.3s;
+}
